@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+body{
+    background-image: url(cielito.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    margin-top: 20px;
+}
+
+main{
+    display: flex;
+}
+.cardInput{
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top:5px;
+    margin-left: 240px;
+    width: 80%;
+    height: 450px;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    color: #0A3871;
+    border-radius: 10px;
+    background-image: url(Детский\ альбом.jpeg);
+    background-size: cover;
+   background-position:0cqmax;
+    text-transform: lowercase;
+    background-repeat: no-repeat;
+}
+
+.cardInput:focus{
+    outline: none;
+}
+
+.advert{
+    margin-left: 240px;
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+}
+.botones{
+   margin-top: 20px;
+   line-height: 19px;
+   text-align: center;
+   display: flex;
+   margin-left: 240px;
+}
+
+.btnCifrar{
+    width: 200px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    color: white;
+    border: 1px solid #96a1b1;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+}
+
+.btnDescifrar{
+    margin-left: 100px;
+    width: 200px;
+    height: 67px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+}
+
+.output textarea{
+    margin-left: 200px;
+    background-image: url(descarga\ \(3\).jpeg);
+    background-position:0px;
+    background-size: 100%;
+    width: 20%;
+    height: 480px;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    border: none;
+    position:absolute;
+    text-transform: lowercase;
+    font-size: 40px;
+    font-family: 'Inter', sans-serif;
+    padding-left: 20px;
+    padding-top: 10px;
+    color: #dfd3c2;
+    
+}
+.output textarea:focus{
+    outline: none;
+}
+/*.output p{
+    position: absolute;
+    margin-left: 310px;
+    margin-top: 402px;
+}*/
+.copiar{
+    width: 100px;
+    height: 50px;
+    background: #D8DFE8;
+    border: none;
+    border-radius:24px;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 310px;
+    margin-top: 402px;
+}
+
