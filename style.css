@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 body{
-    background-image: url(cielito.jpeg);
+    background-image: url(fondo_cielito.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -19,11 +19,11 @@ main{
     margin-left: 240px;
     width: 80%;
     height: 450px;
-    font-size: 20px;
+    font-size: 30px;
     font-family: 'Inter', sans-serif;
     color: #0A3871;
     border-radius: 10px;
-    background-image: url(Детский\ альбом.jpeg);
+    background-image: url(input.jpeg);
     background-size: cover;
    background-position:0cqmax;
     text-transform: lowercase;
@@ -44,7 +44,7 @@ main{
    line-height: 19px;
    text-align: center;
    display: flex;
-   margin-left: 240px;
+   margin-left: 300px;
 }
 
 .btnCifrar{
@@ -71,7 +71,7 @@ main{
 
 .output textarea{
     margin-left: 200px;
-    background-image: url(descarga\ \(3\).jpeg);
+    background-image: url(output_night.jpeg);
     background-position:0px;
     background-size: 100%;
     width: 20%;
@@ -85,17 +85,13 @@ main{
     font-family: 'Inter', sans-serif;
     padding-left: 20px;
     padding-top: 10px;
-    color: #dfd3c2;
+    color: #ffffff;
     
 }
 .output textarea:focus{
     outline: none;
 }
-/*.output p{
-    position: absolute;
-    margin-left: 310px;
-    margin-top: 402px;
-}*/
+
 .copiar{
     width: 100px;
     height: 50px;
@@ -105,7 +101,135 @@ main{
     font-family: 'Inter', sans-serif;
     cursor: pointer;
     position: absolute;
-    margin-left: 310px;
+    margin-left: 15px;
     margin-top: 402px;
 }
+
+/*Responsive tablet*/
+@media (max-width: 57.5em){
+    body{
+    background-image: url(fondo_cielito.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+header{
+    margin-top: 20px;
+}
+
+main{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.input{
+    width: 100%;
+}
+.cardInput{
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top:5px;
+    margin-left: 10px;
+    width: 85%;
+    height: 300px;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    color: #0A3871;
+    border-radius: 10px;
+    background-image: url(input.jpeg);
+    background-size: 100%;
+   background-position:0px;
+    text-transform: lowercase;
+    background-repeat: no-repeat;
+    position:relative;
+
+
+
+}
+
+.cardInput:focus{
+    outline: none;
+}
+
+.advert{
+
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    width: 80%;
+    margin-left: 150px;
+    top: 67%;
+}
+.botones{
+
+   width: 80%;
+   margin-left: 50px;
+    top: 70%;
+}
+
+.btnCifrar{
+
+    width: 48%;
+    border-radius: 24px;
+}
+
+.btnDescifrar{
+
+    width: 48%;
+    border-radius: 24px;
+}
+.output{
+    /*width: 100%;*/
+
+    width: 80%;
+    height: 15%;
+    left: 10%;
+    top: 80%;
+}
+.output textarea{
+    margin-left: 1px;
+    margin-top: 30px;
+    background-image: url(output_night.jpeg);
+    background-position:0px;
+    background-size: 100%;
+    width: 80%;
+    height: 200px;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    border: none;
+    position:static;
+    text-transform: lowercase;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    padding-left: 43px;
+    padding-right: 43px;
+    padding-top: 10px;
+    color: #dfd3c2;
+
+   
+    
+}
+.output textarea:focus{
+    outline: none;
+}
+
+.copiar{
+    width: 48%;
+    height: 50px;
+    background: #D8DFE8;
+    border: none;
+    border-radius:24px;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    position: static;
+    margin-left: 70px;
+    margin-top: 0px;
+
+}
+}
+
+
+
 
