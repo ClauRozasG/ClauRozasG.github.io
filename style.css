@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Signika+Negative:wght@600&display=swap');
 body{
-    background-image: url(fondo_cielito.jpeg);
+    background-image: url(backgrounf_day_final.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -13,8 +13,8 @@ main{
     display: flex;
 }
 .cardInput{
-    padding-top: 5px;
-    padding-left: 30px;
+    padding-top: 20px;
+    padding-left: 40px;
     padding-right: 30px;
     margin-top:5px;
     margin-left: 240px;
@@ -24,7 +24,7 @@ main{
     font-family: 'Inter', sans-serif;
     color: #0A3871;
     border-radius: 10px;
-    background-image: url(input.jpeg);
+    background-image: url(input_day.jpeg);
     background-size: cover;
    background-position:0cqmax;
     text-transform: lowercase;
@@ -45,7 +45,7 @@ main{
    line-height: 19px;
    text-align: center;
    display: flex;
-   margin-left: 300px;
+   margin-left: 400px;
 }
 
 .btnCifrar{
@@ -72,9 +72,10 @@ main{
 
 .output textarea{
     margin-left: 200px;
-    background-image: url(output_night.jpeg);
+    margin-top: 20px;
+    background-image: url(output_day.jpeg);
     background-position:0px;
-    background-size: 100%;
+    background-size: cover;
     width: 20%;
     height: 480px;
     background-repeat: no-repeat;
@@ -86,7 +87,7 @@ main{
     font-family: 'Inter', sans-serif;
     padding-left: 20px;
     padding-top: 10px;
-    color: #ffffff;
+    color: #0A3871;
     
 }
 .output textarea:focus{
@@ -102,20 +103,19 @@ main{
     font-family: 'Inter', sans-serif;
     cursor: pointer;
     position: absolute;
-    margin-left: 15px;
+    margin-left:-80px;
     margin-top: 402px;
 }
 
 .footer{
     margin-top: 20px;
-    background-color: #638e78;
     display: flex;
     text-align: center;
 }
 .Texto{
     margin-left: 700px;
     margin-right: 20px;
-    font-family: 'Signika Negative', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .linkedin{
@@ -128,10 +128,38 @@ main{
     width: 30px;
     height: 30px;
 }
-/*Responsive tablet*/
+
+/*Modo oscuro dependiendo del sistema*/
+@media (prefers-color-scheme: dark) {
+    .output textarea {
+      background-image: url(output_night.png);
+      color: #ffffff;
+    }
+
+    .cardInput{
+        background-image: url(input_night.jpeg);
+        color: #ffffff;
+    }
+
+    .advert{
+        color: white;
+    }
+
+    body{
+        background-image: url(background_night_final.jpeg);
+        
+    }
+
+    .footer{
+        color: white;
+
+    }
+}
+
+
+/*Responsive*/
 @media (max-width: 57.5em){
     body{
-    background-image: url(fondo_cielito.jpeg);
     background-repeat: no-repeat;
     background-size:cover;
 }
@@ -160,10 +188,8 @@ main{
     height: 300px;
     font-size: 20px;
     font-family: 'Inter', sans-serif;
-    color: #0A3871;
     border-radius: 10px;
-    background-image: url(input.jpeg);
-    background-size: 100%;
+    background-size: cover;
    background-position:0px;
     text-transform: lowercase;
     background-repeat: no-repeat;
@@ -212,11 +238,10 @@ main{
     top: 80%;
 }
 .output textarea{
-    margin-left: 1px;
+   margin-left: 1px;
     margin-top: 30px;
-    background-image: url(output_night.jpeg);
     background-position:0px;
-    background-size: 100%;
+    background-size:unset;
     width: 80%;
     height: 200px;
     background-repeat: no-repeat;
@@ -229,7 +254,6 @@ main{
     padding-left: 43px;
     padding-right: 43px;
     padding-top: 10px;
-    color: #dfd3c2;
 
    
     
@@ -250,6 +274,28 @@ main{
     margin-left: 70px;
     margin-top: 0px;
 
+}
+
+.footer{
+    width: 90%;
+  
+}
+
+.Texto{
+    margin-left: 20%;
+    margin-right: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.linkedin{
+    display: flex;
+    width: 30px;
+    height: 30px;
+}
+.git{
+    display: flex;
+    width: 30px;
+    height: 30px;
 }
 }
 
